@@ -67,6 +67,55 @@
       contact_title_html: 'Diplomatic & Corporate <span class="gold-shimmer-text">Advisory Channels</span>',
       contact_subtitle: 'Direct administrative conduits to the Ministry of Investment (MISA), Ministry of Commerce, and ZATCA through our central Riyadh headquarters.',
 
+      // Blog Page
+      blog_badge: 'Knowledge Center',
+      blog_title_html: 'Insights & <span class="gold-shimmer-text">Regulatory Updates</span>',
+      blog_subtitle: 'Expert analysis on Saudi Arabia\'s evolving business landscape, Vision 2030 initiatives, and government licensing strategies.',
+      blog_cat_all: 'All',
+      blog_cat_reg: 'Regulatory News',
+      blog_cat_strat: 'Business Strategy',
+      blog_cat_vision: 'Vision 2030',
+      blog_cat_misa: 'MISA Updates',
+      blog_feat_badge: 'Featured Insight',
+      blog_feat_date: 'Oct 24, 2024',
+      blog_feat_title: 'The Future of MISA Licensing: 2024 Regulatory Overhaul Explained',
+      blog_feat_desc: 'An in-depth analysis of the Ministry of Investment\'s recent structural changes. Discover how the new tiered licensing system impacts foreign direct investment and what structural adjustments your enterprise needs to maintain compliance.',
+      blog_feat_author: 'Dr. Ahmed Al-Farsi',
+      blog_feat_author_role: 'Head of Compliance',
+      blog_latest_heading: 'Latest Analysis',
+      blog_card1_badge: 'Compliance',
+      blog_card1_date: 'Oct 18, 2024',
+      blog_card1_title: 'Navigating the New Saudization Quotas in Tech',
+      blog_card1_desc: 'A breakdown of the updated Nitaqat requirements for the ICT sector and strategies for multinational corporations to achieve platinum status.',
+      blog_card2_badge: 'Vision 2030',
+      blog_card2_date: 'Oct 12, 2024',
+      blog_card2_title: 'Regional Headquarters (RHQ) Program Deadlines',
+      blog_card2_desc: 'Critical updates on the mandate for international companies to establish their Middle East headquarters in Riyadh by the end of Q4.',
+      blog_card3_badge: 'Investment',
+      blog_card3_date: 'Oct 05, 2024',
+      blog_card3_title: 'Special Economic Zones: Tax Incentives Revealed',
+      blog_card3_desc: 'Comprehensive overview of the newly announced tax holidays and operational exemptions within the King Abdullah Economic City.',
+      blog_read_article: 'Read Article',
+      blog_news_title: 'Stay Ahead of Regulatory Shifts',
+      blog_news_desc: 'Subscribe to the Executive Briefing. Receive curated analysis on government licensing, structural reforms, and strategic foresight delivered monthly.',
+      blog_news_placeholder: 'Corporate Email Address',
+      blog_news_btn: 'Subscribe',
+      blog_news_agree_prefix: 'By subscribing, you agree to our',
+      blog_news_agree_suffix: '',
+
+      // Footer
+      footer_brand_desc: 'Premium government relations and licensing consultancy for the visionaries of tomorrow.',
+      footer_resources_heading: 'Resources',
+      footer_legal_heading: 'Legal',
+      footer_connect_heading: 'Connect',
+      footer_regulatory_guide: 'Regulatory Guide',
+      footer_vision_faqs: 'Vision 2030 FAQs',
+      footer_investor_licensing: 'Investor Licensing',
+      footer_privacy_policy: 'Privacy Policy',
+      footer_cr_label: 'CR:',
+      footer_vat_label: 'VAT:',
+      footer_copyright: '© 2024 Omar Shalpy Government Licensing. All rights reserved.',
+
       // Stats
       stat_1_label: 'EXECUTIVE SUPPORT',
       stat_2_label: 'COMPLIANCE RATE',
@@ -138,6 +187,55 @@
       contact_title_html: 'قنوات التواصل الاستشاري والتنفيذي <span class="gold-shimmer-text">المباشر</span>',
       contact_subtitle: 'قنوات اتصال مباشرة وموثوقة مع وزارة الاستثمار (MISA)، وزارة التجارة، وهيئة الزكاة والضريبة والجمارك من خلال مقرنا الرئيسي بالرياض.',
 
+      // Blog Page
+      blog_badge: 'مركز المعرفة والأنظمة',
+      blog_title_html: 'أحدث الرؤى والتحديثات <span class="gold-shimmer-text">التنظيمية والتشريعية</span>',
+      blog_subtitle: 'تحليلات استراتيجية متقدمة حول بيئة الاستثمار السعودية، مستجدات رؤية 2030، وأحدث لوائح التراخيص الحكومية المعتمدة.',
+      blog_cat_all: 'الكل',
+      blog_cat_reg: 'أخبار الأنظمة واللوائح',
+      blog_cat_strat: 'استراتيجيات الأعمال',
+      blog_cat_vision: 'رؤية 2030',
+      blog_cat_misa: 'تحديثات وزارة الاستثمار (MISA)',
+      blog_feat_badge: 'رؤية مختارة',
+      blog_feat_date: '24 أكتوبر 2024',
+      blog_feat_title: 'مستقبل تراخيص وزارة الاستثمار (MISA): دليل التحديثات التنظيمية الشاملة',
+      blog_feat_desc: 'تحليل دقيق للتغييرات الهيكلية الأخيرة في وزارة الاستثمار. تعرّف على تأثير نظام التراخيص متدرج الفئات على تدفقات الاستثمار الأجنبي المباشر والمتطلبات التنظيمية لضمان استمرارية الامتثال.',
+      blog_feat_author: 'د. أحمد الفارسي',
+      blog_feat_author_role: 'رئيس إدارة الامتثال التنظيمي',
+      blog_latest_heading: 'أحدث التحليلات التنظيمية',
+      blog_card1_badge: 'الامتثال التنظيمي',
+      blog_card1_date: '18 أكتوبر 2024',
+      blog_card1_title: 'التعامل مع نسب التوطين (نطاقات) الجديدة في قطاع التقنية',
+      blog_card1_desc: 'تفاصيل شاملة لمتطلبات نطاقات المحدثة لقطاع الاتصالات والتقنية واستراتيجيات الشركات الدولية الرائدة لبلوغ والحفاظ على النطاق البلاتيني.',
+      blog_card2_badge: 'رؤية 2030',
+      blog_card2_date: '12 أكتوبر 2024',
+      blog_card2_title: 'المواعيد النهائية لبرنامج المقرات الإقليمية (RHQ)',
+      blog_card2_desc: 'تحديثات تنظيمية حاسمة حول اشتراطات تأسيس الشركات العالمية لمقراتها الإقليمية في العاصمة الرياض قبل حلول الموعد المحدد.',
+      blog_card3_badge: 'الاستثمار والمناطق الخاصة',
+      blog_card3_date: '05 أكتوبر 2024',
+      blog_card3_title: 'المناطق الاقتصادية الخاصة: حزمة الحوافز والإعفاءات الضريبية',
+      blog_card3_desc: 'دليل تفصيلي للإعفاءات الضريبية والتسهيلات التشغيلية المعتمدة حديثاً للشركات المستثمرة في مدينة الملك عبدالله الاقتصادية والمناطق الخاصة.',
+      blog_read_article: 'قراءة المقال',
+      blog_news_title: 'ابقَ متقدماً بخطوة في مواكبة الأنظمة',
+      blog_news_desc: 'انضم إلى النشرة التنفيذية الدورية. استقبل شهرياً تحليلات استباقية رفيعة المستوى حول التراخيص الحكومية والإصلاحات التشريعية.',
+      blog_news_placeholder: 'البريد الإلكتروني للشركة',
+      blog_news_btn: 'اشتراك',
+      blog_news_agree_prefix: 'بالاشتراك، فإنك توافق على',
+      blog_news_agree_suffix: 'الخاصة بنا.',
+
+      // Footer
+      footer_brand_desc: 'استشارات متخصصة في العلاقات الحكومية وتراخيص الاستثمار لنخبة رواد المستقبل في المملكة.',
+      footer_resources_heading: 'المراجع والأنظمة',
+      footer_legal_heading: 'البيانات الرسمية',
+      footer_connect_heading: 'قنوات التواصل',
+      footer_regulatory_guide: 'دليل الأنظمة واللوائح',
+      footer_vision_faqs: 'أسئلة شائعة حول الرؤية',
+      footer_investor_licensing: 'تراخيص المستثمرين',
+      footer_privacy_policy: 'سياسة الخصوصية',
+      footer_cr_label: 'السجل التجاري:',
+      footer_vat_label: 'الرقم الضريبي:',
+      footer_copyright: '© 2024 عمر شلبي لحلول التراخيص الحكومية. جميع الحقوق محفوظة.',
+
       // Stats
       stat_1_label: 'دعم تنفيذي متواصل',
       stat_2_label: 'نسبة الامتثال التنظيمي',
@@ -168,7 +266,26 @@
     { en: 'EXECUTIVE SUPPORT', ar: 'دعم تنفيذي متواصل' },
     { en: 'COMPLIANCE RATE', ar: 'نسبة الامتثال التنظيمي' },
     { en: 'LICENSES SECURED', ar: 'ترخيصاً حكومياً منجزاً' },
-    { en: 'YEARS EXPERTISE', ar: 'عاماً من الخبرة والريادة' }
+    { en: 'YEARS EXPERTISE', ar: 'عاماً من الخبرة والريادة' },
+    { en: 'Resources', ar: 'المراجع والأنظمة' },
+    { en: 'Legal', ar: 'البيانات الرسمية' },
+    { en: 'Connect', ar: 'قنوات التواصل' },
+    { en: 'Read Article', ar: 'قراءة المقال' },
+    { en: 'Featured Insight', ar: 'رؤية مختارة' },
+    { en: 'Latest Analysis', ar: 'أحدث التحليلات التنظيمية' },
+    { en: 'Stay Ahead of Regulatory Shifts', ar: 'ابقَ متقدماً بخطوة في مواكبة الأنظمة' },
+    { en: 'Subscribe', ar: 'اشتراك' },
+    { en: 'Regulatory News', ar: 'أخبار الأنظمة واللوائح' },
+    { en: 'Business Strategy', ar: 'استراتيجيات الأعمال' },
+    { en: 'Vision 2030', ar: 'رؤية 2030' },
+    { en: 'MISA Updates', ar: 'تحديثات وزارة الاستثمار (MISA)' },
+    { en: 'Dr. Ahmed Al-Farsi', ar: 'د. أحمد الفارسي' },
+    { en: 'Head of Compliance', ar: 'رئيس إدارة الامتثال التنظيمي' },
+    { en: 'Knowledge Center', ar: 'مركز المعرفة والأنظمة' },
+    { en: 'Special Economic Zones: Tax Incentives Revealed', ar: 'المناطق الاقتصادية الخاصة: حزمة الحوافز والإعفاءات الضريبية' },
+    { en: 'Regional Headquarters (RHQ) Program Deadlines', ar: 'المواعيد النهائية لبرنامج المقرات الإقليمية (RHQ)' },
+    { en: 'Navigating the New Saudization Quotas in Tech', ar: 'التعامل مع نسب التوطين (نطاقات) الجديدة في قطاع التقنية' },
+    { en: 'The Future of MISA Licensing: 2024 Regulatory Overhaul Explained', ar: 'مستقبل تراخيص وزارة الاستثمار (MISA): دليل التحديثات التنظيمية الشاملة' }
   ];
 
   function getSavedLanguage() {
@@ -266,6 +383,9 @@
       } else if (path.includes('contact')) {
         mainH1.innerHTML = t.contact_title_html;
         if (mainP) mainP.textContent = t.contact_subtitle;
+      } else if (path.includes('blog')) {
+        mainH1.innerHTML = t.blog_title_html;
+        if (mainP) mainP.textContent = t.blog_subtitle;
       } else if (path.endsWith('/') || path.includes('index') || path.includes('home')) {
         mainH1.innerHTML = t.home_title_html;
         if (mainP) mainP.textContent = t.home_subtitle;
@@ -295,6 +415,26 @@
           node.textContent = toText;
         }
       });
+    });
+
+    // 9. Generic [data-i18n] element translation
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (t[key] !== undefined) {
+        if (key.endsWith('_html')) {
+          el.innerHTML = t[key];
+        } else {
+          el.textContent = t[key];
+        }
+      }
+    });
+
+    // 10. Generic [data-i18n-placeholder] attribute translation
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (t[key] !== undefined) {
+        el.setAttribute('placeholder', t[key]);
+      }
     });
 
     
