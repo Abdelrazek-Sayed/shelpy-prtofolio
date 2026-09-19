@@ -1,0 +1,306 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#e9c349","surface":"#f9f9ff","on-surface-variant":"#444650","error-container":"#ffdad6","on-background":"#191c20","on-secondary":"#ffffff","inverse-primary":"#b3c5ff","surface-white":"#FFFFFF","on-secondary-fixed-variant":"#574500","on-secondary-fixed":"#241a00","on-tertiary-fixed-variant":"#474746","surface-container-highest":"#e2e2e8","inverse-surface":"#2e3035","on-primary":"#ffffff","surface-dim":"#d9d9df","primary":"#00113a","surface-tint":"#435b9f","secondary-container":"#fed65b","on-error":"#ffffff","tertiary":"#141414","surface-variant":"#e2e2e8","surface-container":"#ededf3","regal-gradient-start":"#002366","on-primary-fixed-variant":"#2a4386","on-primary-container":"#758dd5","regal-gradient-end":"#001233","on-tertiary-container":"#918f8f","on-tertiary":"#ffffff","tertiary-fixed-dim":"#c8c6c5","surface-container-low":"#f3f3f9","background":"#f9f9ff","soft-gold":"#E5C76B","tertiary-fixed":"#e5e2e1","on-error-container":"#93000a","outline-variant":"#c5c6d2","primary-container":"#002366","primary-fixed-dim":"#b3c5ff","on-surface":"#191c20","secondary":"#735c00","error":"#ba1a1a","outline":"#757682","secondary-fixed":"#ffe088","on-primary-fixed":"#00174a","on-tertiary-fixed":"#1c1b1b","surface-bright":"#f9f9ff","inverse-on-surface":"#f0f0f6","surface-container-lowest":"#ffffff","on-secondary-container":"#745c00","primary-fixed":"#dbe1ff","surface-container-high":"#e7e8ee","tertiary-container":"#282828"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"container-max":"1280px","margin-mobile":"20px","gutter":"24px","margin-desktop":"64px","section-gap":"120px"},"fontFamily":{"body-md":["Inter"],"headline-md":["Inter"],"label-sm":["IBM Plex Sans"],"headline-lg-mobile":["Inter"],"label-md":["IBM Plex Sans"],"body-lg":["Inter"],"display-xl":["Inter"],"headline-lg":["Inter"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"600"}],"headline-lg-mobile":["32px",{"lineHeight":"40px","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"500"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"display-xl":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/theme-animations.css">
+</head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 bg-[#00113a]/95 backdrop-blur-md border-b border-white/10 shadow-[0_4px_25px_rgba(0,0,0,0.3)]">
+  <div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
+    <!-- Logo -->
+    <a href="../index.html" class="flex items-center gap-3 group text-decoration-none" title="Omar Shalpy Government Licensing">
+      <div class="w-10 h-10 bg-gradient-to-br from-[#fed65b] to-[#d4af37] rounded-lg flex items-center justify-center shadow-md shadow-black/20 group-hover:scale-105 transition-transform">
+        <span class="material-symbols-outlined text-[#00113a] text-2xl font-bold" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+      </div>
+      <div class="flex flex-col">
+        <span data-i18n="brand_title" class="font-headline-md text-headline-md text-white font-bold tracking-wider leading-none">OMAR SHALPY</span>
+        <span data-i18n="brand_subtitle" class="text-[9px] font-bold text-[#fed65b] tracking-[0.22em] uppercase mt-1">GOVERNMENT LICENSING</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden lg:flex items-center gap-6 text-[13px] tracking-wider uppercase font-label-md">
+      <a href="../index.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="home">HOME</a>
+      
+      <!-- Services Dropdown -->
+      <div class="relative group/nav">
+        <a href="services.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors flex items-center gap-1" data-path="services">
+          SERVICES
+          <span class="material-symbols-outlined text-[16px] group-hover/nav:rotate-180 transition-transform">expand_more</span>
+        </a>
+        <div class="absolute left-0 top-full pt-2 hidden group-hover/nav:block z-50">
+          <div class="bg-[#00174a] shadow-2xl rounded-xl py-2 min-w-[240px] border border-white/15 backdrop-blur-xl">
+            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors" data-path="our-services" href="services.html">
+              <span class="material-symbols-outlined text-sm text-[#fed65b]">workspace_premium</span>
+              Our Services
+            </a>
+            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors" data-path="administrative-services" href="administrative-services.html">
+              <span class="material-symbols-outlined text-sm text-[#fed65b]">admin_panel_settings</span>
+              Administrative Services
+            </a>
+            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors" data-path="hr-package" href="hr-package.html">
+              <span class="material-symbols-outlined text-sm text-[#fed65b]">badge</span>
+              HR Management Package
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="knowledge-center.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="knowledge-center">KNOWLEDGE CENTER</a>
+      <a href="blog.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="blog">BLOG</a>
+      <a href="../index.html#customers" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="customers">CUSTOMERS</a>
+      <a href="about-us.html" class="text-[#fed65b] font-bold border-b-2 border-[#fed65b] pb-1" data-path="about-us">ABOUT US</a>
+      <a href="contact-modal.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="contact">CONTACT</a>
+    </nav>
+
+    <!-- Right Actions -->
+    <div class="flex items-center gap-2.5 sm:gap-3">
+      <!-- Language Switcher Button (AR / EN) -->
+      <button id="lang-toggle-btn" onclick="toggleLanguage()" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 transition-all cursor-pointer active:scale-95 shadow-sm" title="Change Language / تغيير اللغة">
+        <span class="material-symbols-outlined text-[17px] text-[#fed65b]">language</span>
+        <span id="lang-btn-text">العربية</span>
+      </button>
+
+      <!-- Client Portal Button -->
+      <button onclick="openClientPortalModal()" class="bg-gradient-to-r from-[#fed65b] to-[#E5C76B] hover:from-[#ffe088] hover:to-[#fed65b] text-[#00113a] font-bold text-xs uppercase tracking-wider px-3.5 sm:px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer">
+        <span class="material-symbols-outlined text-[18px]">vpn_key</span>
+        <span class="client-portal-btn-text">Client Portal</span>
+      </button>
+
+      <!-- Profile Avatar (Clickable Link to Profile Page) -->
+      <a href="profile.html" class="relative group/avatar cursor-pointer hidden sm:flex transition-transform hover:scale-105 active:scale-95" title="Client Profile / الملف الشخصي">
+        <div class="w-10 h-10 rounded-full border-2 border-[#fed65b] p-0.5 bg-[#001c4a] flex items-center justify-center overflow-hidden shadow-md group-hover:border-[#fed65b] group-hover:bg-[#002866] transition-all">
+          <span class="material-symbols-outlined text-[#fed65b] text-2xl">person</span>
+        </div>
+        <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 border-2 border-[#00113a] rounded-full" title="Active Verified Client"></span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-toggle" class="lg:hidden text-white hover:text-[#fed65b] p-1.5 focus:outline-none transition-colors" aria-label="Toggle Navigation">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-dropdown-menu" class="hidden lg:hidden bg-[#00113a]/98 border-b border-white/10 px-margin-mobile py-4 space-y-3">
+    <a href="../index.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="home">HOME</a>
+    <a href="services.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="services">SERVICES</a>
+    <a href="administrative-services.html" class="block pl-4 font-label-md text-xs uppercase tracking-wider text-white/70 hover:text-[#fed65b] py-1" data-path="administrative-services">↳ Administrative Services</a>
+    <a href="hr-package.html" class="block pl-4 font-label-md text-xs uppercase tracking-wider text-white/70 hover:text-[#fed65b] py-1" data-path="hr-package">↳ HR Management</a>
+    <a href="knowledge-center.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="knowledge-center">KNOWLEDGE CENTER</a>
+    <a href="blog.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="blog">BLOG</a>
+    <a href="../index.html#customers" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="customers">CUSTOMERS</a>
+    <a href="about-us.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="about-us">ABOUT US</a>
+    <a href="contact-modal.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="contact">CONTACT</a>
+    <a href="profile.html" class="block font-label-md text-xs uppercase tracking-wider text-[#fed65b] font-bold py-2 border-t border-white/10 mt-2 flex items-center gap-2" data-path="profile">
+      <span class="material-symbols-outlined text-sm">person</span>
+      CLIENT PROFILE
+    </a>
+  </div>
+</header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative -mt-20 pt-48 pb-32 lg:pb-48 flex items-center justify-center overflow-hidden bg-primary w-full">
+<div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-luminosity" data-alt="Breathtaking wide-angle view of the modern Riyadh or Jeddah skyline at twilight, featuring gleaming skyscrapers against a deep blue sky. Golden hour lighting reflecting off glass facades. High-end architectural photography, sharp contrast, corporate and majestic mood, incorporating deep navy blues and warm gold tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtHeVKn0sAFM6vwzwVKakg1tUswLM591aBJl0Dkkpwc0UirkuOtkqclDY3hUZUxGkqs-3XUtiJh19_ljvKjt5Yl9Rc6HQhxcdG7qReAX27zxzccHMn2ylrujdBkw3JPconA_o4TZNrknjD7AwyLvMI4FyZB8djmE5Fv1QFw7oRgB8jlyWHWMryAcFY_2O0pRzBLdBOpTdPgANYHC3X3q2Jim3-qRDWhDIQB_Q53wWSqa9G5kMOHRCzpQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-transparent"></div>
+<div class="relative z-10 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop text-center flex flex-col items-center">
+<div class="flex items-center gap-4 mb-8">
+<span class="h-px w-12 bg-soft-gold shadow-sm"></span>
+<span class="font-label-sm text-label-sm text-soft-gold uppercase tracking-widest">Company Profile</span>
+<span class="h-px w-12 bg-soft-gold shadow-sm"></span>
+</div>
+<h1 class="font-display-xl text-display-xl text-on-primary mb-6 max-w-4xl tracking-tight">
+        Saudi Arabia’s Premier Partner for <span class="text-transparent bg-clip-text bg-gradient-to-r from-soft-gold to-secondary-container">Government Licensing</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl leading-relaxed">
+        Empowering visionaries and investors to navigate the Kingdom's regulatory landscape with precision, transparency, and executive-level expertise.
+      </p>
+</div>
+</section>
+<!-- History & Timeline Section -->
+<section class="max-w-[1280px] mx-auto w-full px-margin-mobile lg:px-margin-desktop py-section-gap grid lg:grid-cols-12 gap-gutter items-start">
+<div class="lg:col-span-5 flex flex-col gap-6 sticky top-32">
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Our Legacy of Excellence</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+        Established in 1991, we have stood at the forefront of corporate governance and regulatory compliance in Saudi Arabia. For over three decades, our consultancy has evolved alongside the Kingdom's dynamic economy, continuously refining our approach to meet the exacting standards of international investors and local enterprises alike.
+      </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        We recognize that true progress is built on a foundation of unshakeable reliability. From our earliest days facilitating basic commercial registrations to our current role as a strategic enabler of Vision 2030, our commitment to authoritative, transparent, and seamless service has never wavered.
+      </p>
+<div class="mt-8 flex gap-8">
+<div class="flex flex-col">
+<span class="font-display-xl text-display-xl text-primary">30+</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mt-2">Years of Trust</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-xl text-display-xl text-primary">10k</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mt-2">Licenses Issued</span>
+</div>
+</div>
+</div>
+<!-- Timeline -->
+<div class="lg:col-span-6 lg:col-start-7 flex flex-col gap-12 mt-16 lg:mt-0">
+<div class="relative flex gap-8 group">
+<div class="flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-[0_10px_30px_rgba(0,35,102,0.12)] z-10 transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-soft-gold">flag</span>
+</div>
+<div class="w-0.5 h-full bg-surface-variant mt-4 absolute top-12 bottom-[-48px] left-6 -translate-x-1/2"></div>
+</div>
+<div class="flex flex-col pb-12">
+<span class="font-headline-md text-headline-md text-primary mb-2">1991 - Inception</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Founded with a vision to bridge the gap between emerging enterprises and Saudi regulatory authorities, establishing our first office in Riyadh.
+          </p>
+</div>
+</div>
+<div class="relative flex gap-8 group">
+<div class="flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center shadow-[0_10px_30px_rgba(0,35,102,0.04)] z-10 transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-primary">account_balance</span>
+</div>
+<div class="w-0.5 h-full bg-surface-variant mt-4 absolute top-12 bottom-[-48px] left-6 -translate-x-1/2"></div>
+</div>
+<div class="flex flex-col pb-12">
+<span class="font-headline-md text-headline-md text-primary mb-2">2005 - Enterprise Expansion</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Expanded our portfolio to include comprehensive corporate governance and foreign investment licensing, serving multinational corporations entering the GCC.
+          </p>
+</div>
+</div>
+<div class="relative flex gap-8 group">
+<div class="flex flex-col items-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center shadow-[0_10px_30px_rgba(0,35,102,0.04)] z-10 transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-primary">rocket_launch</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-primary mb-2">2016 &amp; Beyond - Vision 2030</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Realigned our strategic objectives to fully support Saudi Vision 2030, integrating advanced digital licensing technologies and rapid processing frameworks.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder's Message Section -->
+<section class="bg-primary w-full py-section-gap relative overflow-hidden">
+<div class="absolute -top-[40%] -right-[10%] w-[800px] h-[800px] bg-soft-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop grid lg:grid-cols-12 gap-gutter items-center relative z-10">
+<div class="lg:col-span-5 relative">
+<div class="absolute -inset-4 bg-gradient-to-br from-soft-gold/20 to-transparent rounded-xl transform -rotate-3"></div>
+<img alt="Mohamed Ahmed Omar Bashammakh" class="relative w-full aspect-square object-cover rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.4)] grayscale-[20%] contrast-125" src="https://lh3.googleusercontent.com/aida/AEtjO1X5VyJSaD8thKny0sT40NI-yr7fiFw4DJNwN0Tv85k2MqKtp6pJSNLlOxleHTBYyyP5TCcSXGPQkLlwpPhbgd2EO1fUi7xuK0X4_uReObcWuNo6h8Wpc_Ti0Q2_yMvVS7glFtX3Th_P6zRH3t8ZMwa1zlYIYnrIGPp4PQ9ECasGylZqop8vIPM-LBn9dgZA1-h8RDXk9tG1GK2U1lH-szFjFWNAPwZPyHKzKHnl7ud4Q1K4Rw3goq2xqcJl">
+<div class="absolute bottom-6 left-6 bg-surface-white/90 backdrop-blur-md px-6 py-4 rounded shadow-xl">
+<h4 class="font-headline-md text-headline-md text-primary tracking-tight">Mohamed Ahmed Omar Bashammakh</h4>
+<p class="font-label-sm text-label-sm text-soft-gold uppercase tracking-widest mt-1">Founder &amp; Chairman</p>
+</div>
+</div>
+<div class="lg:col-span-6 lg:col-start-7 flex flex-col gap-8 mt-12 lg:mt-0">
+<span class="material-symbols-outlined text-display-xl text-soft-gold opacity-50">format_quote</span>
+<h3 class="font-headline-lg text-headline-lg text-on-primary leading-snug">
+          "Our mission is to architect the administrative foundations upon which the next generation of Saudi Arabian innovation will be built."
+        </h3>
+<div class="flex flex-col gap-4 text-on-primary-container font-body-lg text-body-lg">
+<p class="">
+            At the heart of our operations lies a steadfast commitment to the ambitious goals of Vision 2030. We understand that navigating governmental frameworks requires more than just administrative processing; it demands strategic foresight, profound legal acumen, and an unwavering dedication to transparency.
+          </p>
+<p class="">
+            Since 1991, we have pledged to be the most reliable partner for visionaries seeking to invest in the Kingdom. By integrating advanced technologies with deep regulatory knowledge, we ensure that our clients can focus entirely on growth and innovation, confident that their foundational compliance is impeccably managed.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Company Objectives (Bento Grid) -->
+<section class="max-w-[1280px] mx-auto w-full px-margin-mobile lg:px-margin-desktop py-section-gap">
+<div class="flex flex-col items-center text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-4">Strategic Objectives</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+        Driving continuous improvement and expanding our capabilities to serve a global clientele.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+<!-- Objective 1 -->
+<div class="lg:col-span-2 bg-surface-container rounded-xl p-10 flex flex-col justify-between shadow-[0_10px_30px_rgba(0,35,102,0.04)] group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[200px] text-primary">handshake</span>
+</div>
+<div class="w-14 h-14 rounded bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Strategic Partnerships</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Cultivating robust alliances with key government ministries and international legal entities to streamline complex licensing procedures and advocate for investor-friendly policies.
+          </p>
+</div>
+</div>
+<!-- Objective 2 -->
+<div class="bg-primary rounded-xl p-10 flex flex-col justify-between shadow-[0_10px_30px_rgba(0,35,102,0.08)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-14 h-14 rounded bg-soft-gold/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-soft-gold text-3xl">memory</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-3">Advanced Technologies</h3>
+<p class="font-body-md text-body-md text-on-primary-container">
+            Integrating AI-driven document verification and secure, cloud-based client portals to ensure rapid, error-free processing.
+          </p>
+</div>
+</div>
+<!-- Objective 3 -->
+<div class="bg-secondary rounded-xl p-10 flex flex-col justify-between shadow-[0_10px_30px_rgba(0,35,102,0.04)] group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-14 h-14 rounded bg-surface-white/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary text-3xl">public</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-secondary mb-3">Geographic Expansion</h3>
+<p class="font-body-md text-body-md text-secondary-fixed">
+            Broadening our operational footprint across all major GCC economic zones to offer localized, expert counsel.
+          </p>
+</div>
+</div>
+<!-- Objective 4 -->
+<div class="lg:col-span-2 bg-surface-container rounded-xl p-10 flex flex-col justify-between shadow-[0_10px_30px_rgba(0,35,102,0.04)] group hover:-translate-y-1 transition-transform duration-300 relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[200px] text-primary">account_tree</span>
+</div>
+<div class="w-14 h-14 rounded bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">account_tree</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Service Diversification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Continuously expanding our service catalog to encompass emerging regulatory frameworks, specialized industrial permits, and post-licensing compliance auditing.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Governance & Transparency -->
+<section class="w-full bg-surface-white py-section-gap relative">
+<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop grid lg:grid-cols-2 gap-16 items-center">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4 mb-2">
+<span class="material-symbols-outlined text-soft-gold">gavel</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Corporate Standards</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">Uncompromising Governance &amp; Transparency</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          In the realm of government licensing, trust is paramount. We maintain an uncompromising stance on corporate governance, adhering strictly to both local legal mandates and international best practices.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Our internal auditing frameworks ensure absolute transparency at every stage of the consulting process. Clients are provided with immutable records of all submissions, fees, and regulatory communications, ensuring complete peace of mind and strict anti-corruption compliance.
+        </p>
+<div class="mt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded font-label-md text-label-md hover:bg-primary-container transition-all shadow-md flex items-center gap-3 w-fit">
+            View Compliance Policies
+            <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative w-full h-[500px]">
+<div class="absolute inset-0 bg-surface-container rounded-xl shadow-[0_20px_60px_rgba(0,35,102,0.06)] transform translate-x-4 translate-y-4"></div>
+<div class="absolute inset-0 bg-cover bg-center rounded-xl shadow-[0_10px_30px_rgba(0,35,102,0.1)] z-10" data-alt="Close up of a premium corporate document with a gold wax seal and a high-end fountain pen resting on it. Shallow depth of field, focused on the intricate details of the seal. Professional, authoritative atmosphere, warm ambient lighting reflecting corporate governance and legal precision." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXRAFYsNHT5UmRQ6p6tmbLwlxczLCGB_nXreoWVgOti5MfhGMzz89y32zVEgR2ZajZXSlXASjKnia71CbtchcVUzb83HA7T2CWlhlzXHEhpC0JgQTOyCj7Vv_EEjP4WbjtU-7D6S9OM4bk9LwI3WiiKEauK1KSZcOeh6lv5Zmxe248UI1lDGcMSUGd5Bg2yruujX9FcisTz6PMrQyV9_XLogz1StLX2SNBtZK8EtGosVB6R_RcluQKFg')"></div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary text-on-primary pt-section-gap pb-12 mt-section-gap"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-16"><div class="col-span-1 md:col-span-1"><div class="flex items-center gap-2 mb-6"><span class="material-symbols-outlined text-soft-gold">verified</span><span class="font-headline-md text-headline-md text-surface-white">SHALPY</span></div><p class="font-body-md text-label-md text-on-primary-container leading-relaxed">Premium government relations and licensing consultancy for the visionaries of tomorrow.</p></div><div class="flex flex-col gap-4"><h4 class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Resources</h4><a class="font-body-md text-label-md text-on-primary-container hover:text-on-primary" href="#">Regulatory Guide</a><a class="font-body-md text-label-md text-on-primary-container hover:text-on-primary" href="#">Vision 2030 FAQs</a><a class="font-body-md text-label-md text-on-primary-container hover:text-on-primary" href="#">Investor Licensing</a></div><div class="flex flex-col gap-4"><h4 class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Legal</h4><p class="font-body-md text-label-md text-on-primary-container">CR: 10101234567</p><p class="font-body-md text-label-md text-on-primary-container">VAT: 312345678900003</p><a class="font-body-md text-label-md text-on-primary-container hover:text-on-primary" href="#">Privacy Policy</a></div><div class="flex flex-col gap-4"><h4 class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Connect</h4><div class="flex gap-4"><span class="material-symbols-outlined cursor-pointer hover:text-soft-gold">public</span><span class="material-symbols-outlined cursor-pointer hover:text-soft-gold">work</span><span class="material-symbols-outlined cursor-pointer hover:text-soft-gold">mail</span></div></div></div><div class="pt-8 border-t border-on-primary-fixed-variant text-center"><p class="font-label-sm text-label-sm text-on-primary-container">© 2024 Omar Shalpy Government Licensing. All rights reserved.</p></div></div></footer>
+
+<script src="../assets/js/i18n.js?v=3.0"></script><script src="../assets/js/app-nav.js?v=3.0"></script></body></html>

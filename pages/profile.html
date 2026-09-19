@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Client Profile & Licensing Portal | Omar Shalpy Government Licensing</title>
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary-fixed-dim": "#e9c349",
+            "surface": "#f9f9ff",
+            "on-surface-variant": "#444650",
+            "error-container": "#ffdad6",
+            "on-background": "#191c20",
+            "on-secondary": "#ffffff",
+            "inverse-primary": "#b3c5ff",
+            "surface-white": "#FFFFFF",
+            "on-secondary-fixed-variant": "#574500",
+            "on-secondary-fixed": "#241a00",
+            "on-tertiary-fixed-variant": "#474746",
+            "surface-container-highest": "#e2e2e8",
+            "inverse-surface": "#2e3035",
+            "on-primary": "#ffffff",
+            "surface-dim": "#d9d9df",
+            "primary": "#00113a",
+            "surface-tint": "#435b9f",
+            "secondary-container": "#fed65b",
+            "on-error": "#ffffff",
+            "tertiary": "#141414",
+            "surface-variant": "#e2e2e8",
+            "surface-container": "#ededf3",
+            "regal-gradient-start": "#002366",
+            "on-primary-fixed-variant": "#2a4386",
+            "on-primary-container": "#758dd5",
+            "regal-gradient-end": "#001233",
+            "on-tertiary-container": "#918f8f",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed-dim": "#c8c6c5",
+            "surface-container-low": "#f3f3f9",
+            "background": "#f9f9ff",
+            "soft-gold": "#E5C76B",
+            "tertiary-fixed": "#e5e2e1",
+            "on-error-container": "#93000a",
+            "outline-variant": "#c5c6d2",
+            "primary-container": "#002366",
+            "primary-fixed-dim": "#b3c5ff",
+            "on-surface": "#191c20",
+            "secondary": "#735c00",
+            "error": "#ba1a1a",
+            "outline": "#757682",
+            "secondary-fixed": "#ffe088",
+            "on-primary-fixed": "#00174a",
+            "on-tertiary-fixed": "#1c1b1b",
+            "surface-bright": "#f9f9ff",
+            "inverse-on-surface": "#f0f0f6",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-container": "#745c00",
+            "primary-fixed": "#dbe1ff",
+            "surface-container-high": "#e7e8ee",
+            "tertiary-container": "#282828"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "container-max": "1280px",
+            "margin-mobile": "20px",
+            "gutter": "24px",
+            "margin-desktop": "64px",
+            "section-gap": "120px"
+          },
+          fontFamily: {
+            "body-md": ["Inter"],
+            "headline-md": ["Inter"],
+            "label-sm": ["IBM Plex Sans"],
+            "headline-lg-mobile": ["Inter"],
+            "label-md": ["IBM Plex Sans"],
+            "body-lg": ["Inter"],
+            "display-xl": ["Inter"],
+            "headline-lg": ["Inter"]
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/theme-animations.css">
+</head>
+<body class="bg-background font-body-md text-on-background">
+
+<!-- Dynamic Unified Header -->
+<header class="fixed top-0 w-full z-50 bg-[#00113a]/95 backdrop-blur-md border-b border-white/10 shadow-[0_4px_25px_rgba(0,0,0,0.3)]">
+  <div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
+    <!-- Logo -->
+    <a href="../index.html" class="flex items-center gap-3 group text-decoration-none" title="Omar Shalpy Government Licensing">
+      <div class="w-10 h-10 bg-gradient-to-br from-[#fed65b] to-[#d4af37] rounded-lg flex items-center justify-center shadow-md shadow-black/20 group-hover:scale-105 transition-transform">
+        <span class="material-symbols-outlined text-[#00113a] text-2xl font-bold" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+      </div>
+      <div class="flex flex-col">
+        <span data-i18n="brand_title" class="font-headline-md text-headline-md text-white font-bold tracking-wider leading-none">OMAR SHALPY</span>
+        <span data-i18n="brand_subtitle" class="text-[9px] font-bold text-[#fed65b] tracking-[0.22em] uppercase mt-1">GOVERNMENT LICENSING</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden lg:flex items-center gap-6 text-[13px] tracking-wider uppercase font-label-md">
+      <a href="../index.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="home">HOME</a>
+      
+      <!-- Services Dropdown -->
+      <div class="relative group/nav">
+        <a href="services.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors flex items-center gap-1" data-path="services">
+          SERVICES
+          <span class="material-symbols-outlined text-[16px] group-hover/nav:rotate-180 transition-transform">expand_more</span>
+        </a>
+        <div class="absolute left-0 top-full pt-2 hidden group-hover/nav:block z-50">
+          <div class="bg-[#00174a] shadow-2xl rounded-xl py-2 min-w-[240px] border border-white/15 backdrop-blur-xl">
+            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors" data-path="our-services" href="services.html">
+              <span class="material-symbols-outlined text-sm text-[#fed65b]">workspace_premium</span>
+              Our Services
+            </a>
+            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors" data-path="administrative-services" href="administrative-services.html">
+              <span class="material-symbols-outlined text-sm text-[#fed65b]">admin_panel_settings</span>
+              Administrative Services
+            </a>
+            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors" data-path="hr-package" href="hr-package.html">
+              <span class="material-symbols-outlined text-sm text-[#fed65b]">badge</span>
+              HR Management Package
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="knowledge-center.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="knowledge-center">KNOWLEDGE CENTER</a>
+      <a href="blog.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="blog">BLOG</a>
+      <a href="../index.html#customers" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="customers">CUSTOMERS</a>
+      <a href="about-us.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="about-us">ABOUT US</a>
+      <a href="contact-modal.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="contact">CONTACT</a>
+    </nav>
+
+    <!-- Right Actions -->
+    <div class="flex items-center gap-2.5 sm:gap-3">
+      <!-- Language Switcher Button (AR / EN) -->
+      <button id="lang-toggle-btn" onclick="toggleLanguage()" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-3 py-2 rounded-lg text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 transition-all cursor-pointer active:scale-95 shadow-sm" title="Change Language / تغيير اللغة">
+        <span class="material-symbols-outlined text-[17px] text-[#fed65b]">language</span>
+        <span id="lang-btn-text">العربية</span>
+      </button>
+
+      <!-- Client Portal Button -->
+      <button onclick="openClientPortalModal()" class="bg-gradient-to-r from-[#fed65b] to-[#E5C76B] hover:from-[#ffe088] hover:to-[#fed65b] text-[#00113a] font-bold text-xs uppercase tracking-wider px-3.5 sm:px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center gap-1.5 active:scale-95 cursor-pointer">
+        <span class="material-symbols-outlined text-[18px]">vpn_key</span>
+        <span class="client-portal-btn-text">Client Portal</span>
+      </button>
+
+      <!-- Profile Avatar (Clickable Link to Profile Page) -->
+      <a href="profile.html" class="relative group/avatar cursor-pointer hidden sm:flex transition-transform hover:scale-105 active:scale-95" title="Client Profile / الملف الشخصي">
+        <div class="w-10 h-10 rounded-full border-2 border-[#fed65b] ring-2 ring-[#fed65b] p-0.5 bg-[#001c4a] flex items-center justify-center overflow-hidden shadow-md group-hover:border-[#fed65b] group-hover:bg-[#002866] transition-all">
+          <span class="material-symbols-outlined text-[#fed65b] text-2xl">person</span>
+        </div>
+        <span class="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-emerald-500 border-2 border-[#00113a] rounded-full" title="Active Verified Client"></span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-toggle" class="lg:hidden text-white hover:text-[#fed65b] p-1.5 focus:outline-none transition-colors" aria-label="Toggle Navigation">
+        <span class="material-symbols-outlined text-2xl">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-dropdown-menu" class="hidden lg:hidden bg-[#00113a]/98 border-b border-white/10 px-margin-mobile py-4 space-y-3">
+    <a href="../index.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="home">HOME</a>
+    <a href="services.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="services">SERVICES</a>
+    <a href="administrative-services.html" class="block pl-4 font-label-md text-xs uppercase tracking-wider text-white/70 hover:text-[#fed65b] py-1" data-path="administrative-services">↳ Administrative Services</a>
+    <a href="hr-package.html" class="block pl-4 font-label-md text-xs uppercase tracking-wider text-white/70 hover:text-[#fed65b] py-1" data-path="hr-package">↳ HR Management</a>
+    <a href="knowledge-center.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="knowledge-center">KNOWLEDGE CENTER</a>
+    <a href="blog.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="blog">BLOG</a>
+    <a href="../index.html#customers" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="customers">CUSTOMERS</a>
+    <a href="about-us.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="about-us">ABOUT US</a>
+    <a href="contact-modal.html" class="block font-label-md text-xs uppercase tracking-wider text-white/90 hover:text-[#fed65b] py-1.5" data-path="contact">CONTACT</a>
+    <a href="profile.html" class="block font-label-md text-xs uppercase tracking-wider text-[#fed65b] font-bold py-2 border-t border-white/10 mt-2 flex items-center gap-2" data-path="profile">
+      <span class="material-symbols-outlined text-sm">person</span>
+      CLIENT PROFILE
+    </a>
+  </div>
+</header>
+
+<main class="w-full pt-20 bg-background min-h-screen">
+  <!-- Profile Hero Banner -->
+  <section class="relative w-full bg-primary overflow-hidden pt-12 pb-28 text-white -mt-20 pt-32">
+    <!-- Ambient geometric background -->
+    <div class="absolute inset-0 z-0 opacity-15 mix-blend-screen bg-gradient-to-r from-regal-gradient-start to-regal-gradient-end">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+            <circle cx="30" cy="30" r="1" fill="#fed65b" opacity="0.4"/>
+            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" stroke-width="0.5" opacity="0.15"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+      </svg>
+    </div>
+
+    <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop relative z-10">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        
+        <!-- Investor Avatar & Identity -->
+        <div class="flex items-center gap-5">
+          <div class="relative">
+            <div class="w-24 h-24 rounded-2xl border-4 border-[#fed65b] bg-gradient-to-br from-[#002366] to-[#00113a] flex items-center justify-center shadow-2xl">
+              <span class="material-symbols-outlined text-5xl text-[#fed65b]">domain</span>
+            </div>
+            <div class="absolute -bottom-2 -right-2 bg-emerald-500 text-white p-1 rounded-lg shadow-md border-2 border-[#00113a]" title="MISA Verified">
+              <span class="material-symbols-outlined text-base block font-bold">verified</span>
+            </div>
+          </div>
+          
+          <div>
+            <div class="flex flex-wrap items-center gap-2.5 mb-1.5">
+              <span class="px-2.5 py-0.5 rounded-full bg-[#fed65b]/20 border border-[#fed65b]/40 text-[#fed65b] text-[11px] font-bold tracking-widest uppercase">
+                MISA Premium Tier
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full bg-white/10 text-white/80 text-[11px] font-medium tracking-wide">
+                CR #1010894231
+              </span>
+            </div>
+            <h1 class="text-2xl md:text-3xl font-headline-lg text-white font-bold tracking-tight">
+              Global Horizons Holding LLC
+            </h1>
+            <p class="text-sm text-white/70 mt-1 flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm text-[#fed65b]">person_pin</span>
+              Senior Liaison Counsel: <strong class="text-white">Omar Shalpy</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Action Buttons -->
+        <div class="flex flex-wrap items-center gap-3 w-full md:w-auto">
+          <a href="contact-modal.html" class="bg-gradient-to-r from-[#fed65b] to-[#E5C76B] hover:from-[#ffe088] hover:to-[#fed65b] text-[#00113a] font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-xl shadow-lg transition-all flex items-center gap-2 active:scale-95">
+            <span class="material-symbols-outlined text-base">support_agent</span>
+            Contact Liaison Officer
+          </a>
+          <button onclick="window.print()" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-4 py-3 rounded-xl text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all">
+            <span class="material-symbols-outlined text-base">download</span>
+            Download Portfolio Summary
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pt-8 border-t border-white/15">
+        <div class="bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
+          <p class="text-[11px] text-[#fed65b] font-bold uppercase tracking-wider">Active Licenses</p>
+          <div class="text-2xl font-bold text-white mt-1">4 <span class="text-xs font-normal text-emerald-400">● 100% Compliant</span></div>
+        </div>
+        <div class="bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
+          <p class="text-[11px] text-[#fed65b] font-bold uppercase tracking-wider">Under Ministry Review</p>
+          <div class="text-2xl font-bold text-white mt-1">2 <span class="text-xs font-normal text-amber-400">● In Progress</span></div>
+        </div>
+        <div class="bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
+          <p class="text-[11px] text-[#fed65b] font-bold uppercase tracking-wider">Saudization Ratio (Qiwa)</p>
+          <div class="text-2xl font-bold text-white mt-1">38.4% <span class="text-xs font-normal text-emerald-400">Platinum Tier</span></div>
+        </div>
+        <div class="bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/10">
+          <p class="text-[11px] text-[#fed65b] font-bold uppercase tracking-wider">ZATCA Tax Clearance</p>
+          <div class="text-2xl font-bold text-white mt-1">Certified <span class="text-xs font-normal text-emerald-400">Valid 1448 H</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Profile Tabs & Content Container -->
+  <section class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop py-12 -mt-16 relative z-20">
+    <div class="bg-surface-white rounded-2xl shadow-xl border border-surface-container overflow-hidden">
+      
+      <!-- Tab Navigation Bar -->
+      <div class="flex flex-wrap border-b border-surface-container bg-surface-container-lowest px-4 sm:px-6 gap-2">
+        <button onclick="switchProfileTab('licenses')" id="tab-btn-licenses" class="profile-tab-btn py-4 px-4 font-label-md text-xs sm:text-sm font-bold uppercase tracking-wider border-b-2 border-primary text-primary transition-all flex items-center gap-2">
+          <span class="material-symbols-outlined text-lg">verified_user</span>
+          <span>Active Licenses & Permits</span>
+        </button>
+        <button onclick="switchProfileTab('applications')" id="tab-btn-applications" class="profile-tab-btn py-4 px-4 font-label-md text-xs sm:text-sm font-semibold uppercase tracking-wider border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-all flex items-center gap-2">
+          <span class="material-symbols-outlined text-lg">pending_actions</span>
+          <span>Ministry Submissions (2)</span>
+        </button>
+        <button onclick="switchProfileTab('documents')" id="tab-btn-documents" class="profile-tab-btn py-4 px-4 font-label-md text-xs sm:text-sm font-semibold uppercase tracking-wider border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-all flex items-center gap-2">
+          <span class="material-symbols-outlined text-lg">folder_shared</span>
+          <span>Corporate Vault & Attestations</span>
+        </button>
+        <button onclick="switchProfileTab('entity')" id="tab-btn-entity" class="profile-tab-btn py-4 px-4 font-label-md text-xs sm:text-sm font-semibold uppercase tracking-wider border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-all flex items-center gap-2">
+          <span class="material-symbols-outlined text-lg">business</span>
+          <span>Entity & Signatory Details</span>
+        </button>
+      </div>
+
+      <!-- Tab Content 1: Active Licenses -->
+      <div id="tab-content-licenses" class="p-6 sm:p-8 space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-bold text-primary">Authorized Government Licenses</h2>
+            <p class="text-sm text-on-surface-variant">Validated through official ministerial databases in the Kingdom of Saudi Arabia.</p>
+          </div>
+          <a href="services.html" class="inline-flex items-center gap-2 bg-primary text-white text-xs font-bold uppercase px-4 py-2.5 rounded-lg hover:bg-primary-container transition-all">
+            <span class="material-symbols-outlined text-base text-[#fed65b]">add_circle</span>
+            Apply For New License
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- License 1 -->
+          <div class="border border-surface-container-high rounded-xl p-6 bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+            <div class="flex items-start justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold">
+                  <span class="material-symbols-outlined text-2xl">account_balance</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-base text-primary">MISA Foreign Investment License</h3>
+                  <p class="text-xs text-on-surface-variant">Ministry of Investment (MISA)</p>
+                </div>
+              </div>
+              <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full">ACTIVE / ساري</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-xs text-on-surface-variant py-3 border-y border-surface-container">
+              <div><span class="block font-medium text-gray-500">License Number:</span> <strong class="text-primary font-mono">1021389421-MISA</strong></div>
+              <div><span class="block font-medium text-gray-500">Issue Date:</span> <strong class="text-primary">15/01/2023</strong></div>
+              <div><span class="block font-medium text-gray-500">Expiry Date:</span> <strong class="text-primary">14/01/2028 (5 Years)</strong></div>
+              <div><span class="block font-medium text-gray-500">Permitted Activity:</span> <strong class="text-primary">Commercial & Engineering Consulting</strong></div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xs text-emerald-700 flex items-center gap-1 font-medium">
+                <span class="material-symbols-outlined text-sm">check_circle</span> Attested by MISA Gateway
+              </span>
+              <button class="text-xs font-bold text-primary hover:text-secondary underline flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm">print</span> Download PDF
+              </button>
+            </div>
+          </div>
+
+          <!-- License 2 -->
+          <div class="border border-surface-container-high rounded-xl p-6 bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+            <div class="flex items-start justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold">
+                  <span class="material-symbols-outlined text-2xl">store</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-base text-primary">Commercial Registration (CR)</h3>
+                  <p class="text-xs text-on-surface-variant">Ministry of Commerce (وزارة التجارة)</p>
+                </div>
+              </div>
+              <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full">ACTIVE / ساري</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-xs text-on-surface-variant py-3 border-y border-surface-container">
+              <div><span class="block font-medium text-gray-500">CR Number:</span> <strong class="text-primary font-mono">1010894231</strong></div>
+              <div><span class="block font-medium text-gray-500">Jurisdiction:</span> <strong class="text-primary">Riyadh Main Chamber</strong></div>
+              <div><span class="block font-medium text-gray-500">Legal Form:</span> <strong class="text-primary">Limited Liability Company (LLC)</strong></div>
+              <div><span class="block font-medium text-gray-500">Capital:</span> <strong class="text-primary">SAR 10,000,000</strong></div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xs text-emerald-700 flex items-center gap-1 font-medium">
+                <span class="material-symbols-outlined text-sm">check_circle</span> Validated with Wathiq API
+              </span>
+              <button class="text-xs font-bold text-primary hover:text-secondary underline flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm">print</span> Download PDF
+              </button>
+            </div>
+          </div>
+
+          <!-- License 3 -->
+          <div class="border border-surface-container-high rounded-xl p-6 bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+            <div class="flex items-start justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold">
+                  <span class="material-symbols-outlined text-2xl">local_fire_department</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-base text-primary">Civil Defense Salamah Safety License</h3>
+                  <p class="text-xs text-on-surface-variant">General Directorate of Civil Defense</p>
+                </div>
+              </div>
+              <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full">ACTIVE / ساري</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-xs text-on-surface-variant py-3 border-y border-surface-container">
+              <div><span class="block font-medium text-gray-500">Permit Code:</span> <strong class="text-primary font-mono">SAL-RYD-88219</strong></div>
+              <div><span class="block font-medium text-gray-500">Location:</span> <strong class="text-primary">Olaya Tower HQ, Riyadh</strong></div>
+              <div><span class="block font-medium text-gray-500">Expiry Date:</span> <strong class="text-primary">2027/08/20</strong></div>
+              <div><span class="block font-medium text-gray-500">Inspection:</span> <strong class="text-primary">Full Safety Compliant</strong></div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xs text-emerald-700 flex items-center gap-1 font-medium">
+                <span class="material-symbols-outlined text-sm">check_circle</span> Direct Salamah Integration
+              </span>
+              <button class="text-xs font-bold text-primary hover:text-secondary underline flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm">print</span> Download PDF
+              </button>
+            </div>
+          </div>
+
+          <!-- License 4 -->
+          <div class="border border-surface-container-high rounded-xl p-6 bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
+            <div class="flex items-start justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold">
+                  <span class="material-symbols-outlined text-2xl">location_city</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-base text-primary">Balady Municipal Operational Permit</h3>
+                  <p class="text-xs text-on-surface-variant">Ministry of Municipal & Rural Affairs</p>
+                </div>
+              </div>
+              <span class="px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full">ACTIVE / ساري</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-xs text-on-surface-variant py-3 border-y border-surface-container">
+              <div><span class="block font-medium text-gray-500">Permit ID:</span> <strong class="text-primary font-mono">BLD-44021-991</strong></div>
+              <div><span class="block font-medium text-gray-500">Municipality:</span> <strong class="text-primary">Al-Olaya Branch, Riyadh</strong></div>
+              <div><span class="block font-medium text-gray-500">Valid Through:</span> <strong class="text-primary">1447/12/30 H</strong></div>
+              <div><span class="block font-medium text-gray-500">Zoning:</span> <strong class="text-primary">Grade-A Commercial</strong></div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xs text-emerald-700 flex items-center gap-1 font-medium">
+                <span class="material-symbols-outlined text-sm">check_circle</span> Balady Platform Certified
+              </span>
+              <button class="text-xs font-bold text-primary hover:text-secondary underline flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm">print</span> Download PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Applications & Timeline -->
+      <div id="tab-content-applications" class="p-6 sm:p-8 space-y-6 hidden">
+        <div>
+          <h2 class="text-xl font-bold text-primary">Active Ministerial Submissions & Clearances</h2>
+          <p class="text-sm text-on-surface-variant">Real-time status tracking overseen directly by Omar Shalpy Government Relations.</p>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Submission Item 1 -->
+          <div class="border border-surface-container rounded-xl p-6 bg-surface-container-lowest">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+              <div>
+                <span class="text-xs font-mono font-bold text-secondary bg-[#fed65b]/20 px-2.5 py-1 rounded">CASE-REQ-2024-9821</span>
+                <h3 class="text-lg font-bold text-primary mt-2">Regional Headquarters (RHQ) Program License Expansion</h3>
+                <p class="text-xs text-on-surface-variant">Ministry of Investment (MISA) & Ministry of Human Resources</p>
+              </div>
+              <span class="text-xs font-bold text-amber-700 bg-amber-100 px-3 py-1.5 rounded-lg w-fit">Under Final Ministerial Sign-Off</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="my-5">
+              <div class="flex justify-between text-xs text-on-surface-variant mb-1.5 font-medium">
+                <span>Phase: Inter-Ministerial Approval</span>
+                <span class="font-bold text-primary">85% Complete</span>
+              </div>
+              <div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+                <div class="bg-gradient-to-r from-primary to-[#fed65b] h-full rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <!-- Timeline Steps -->
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 text-xs pt-4 border-t border-surface-container">
+              <div class="text-emerald-700">
+                <span class="block font-bold">1. File Submission</span>
+                <span class="text-[11px] text-gray-500">Completed (Aug 12)</span>
+              </div>
+              <div class="text-emerald-700">
+                <span class="block font-bold">2. Technical Review</span>
+                <span class="text-[11px] text-gray-500">Passed by MISA</span>
+              </div>
+              <div class="text-primary font-bold">
+                <span class="block text-secondary">3. Inter-Ministerial</span>
+                <span class="text-[11px] text-gray-500">In Progress (Review Team)</span>
+              </div>
+              <div class="text-gray-400">
+                <span class="block font-bold">4. Certificate Issuance</span>
+                <span class="text-[11px] text-gray-400">Estimated: 3 Business Days</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submission Item 2 -->
+          <div class="border border-surface-container rounded-xl p-6 bg-surface-container-lowest">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+              <div>
+                <span class="text-xs font-mono font-bold text-secondary bg-[#fed65b]/20 px-2.5 py-1 rounded">CASE-REQ-2024-9754</span>
+                <h3 class="text-lg font-bold text-primary mt-2">ZATCA Advanced Cross-Border Tax Exemption Ruling</h3>
+                <p class="text-xs text-on-surface-variant">Zakat, Tax and Customs Authority</p>
+              </div>
+              <span class="text-xs font-bold text-blue-700 bg-blue-100 px-3 py-1.5 rounded-lg w-fit">Under Actuarial Review</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="my-5">
+              <div class="flex justify-between text-xs text-on-surface-variant mb-1.5 font-medium">
+                <span>Phase: Regulatory Legal Verification</span>
+                <span class="font-bold text-primary">60% Complete</span>
+              </div>
+              <div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+                <div class="bg-gradient-to-r from-primary to-[#fed65b] h-full rounded-full" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 3: Vault & Documents -->
+      <div id="tab-content-documents" class="p-6 sm:p-8 space-y-6 hidden">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-bold text-primary">Official Corporate Vault & Attestations</h2>
+            <p class="text-sm text-on-surface-variant">Secured repository of authenticated ministerial seals, resolutions, and bylaws.</p>
+          </div>
+          <button class="bg-[#00113a] text-white text-xs font-bold uppercase px-4 py-2.5 rounded-lg flex items-center gap-2 hover:bg-primary-container transition-all">
+            <span class="material-symbols-outlined text-base text-[#fed65b]">upload_file</span>
+            Upload New Document
+          </button>
+        </div>
+
+        <div class="divide-y divide-surface-container border border-surface-container rounded-xl overflow-hidden">
+          <div class="p-4 flex items-center justify-between hover:bg-surface-container-low transition-colors">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-red-600 text-3xl">picture_as_pdf</span>
+              <div>
+                <h4 class="font-bold text-sm text-primary">Articles of Association (Ministry of Commerce Notarized)</h4>
+                <p class="text-xs text-gray-500">PDF • 4.2 MB • Attested Jan 2024</p>
+              </div>
+            </div>
+            <button class="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1.5 border border-surface-container px-3 py-1.5 rounded-lg">
+              <span class="material-symbols-outlined text-base">download</span> Download
+            </button>
+          </div>
+
+          <div class="p-4 flex items-center justify-between hover:bg-surface-container-low transition-colors">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-red-600 text-3xl">picture_as_pdf</span>
+              <div>
+                <h4 class="font-bold text-sm text-primary">General Power of Attorney (Ministry of Justice Najiz)</h4>
+                <p class="text-xs text-gray-500">PDF • 1.8 MB • Valid through 2027</p>
+              </div>
+            </div>
+            <button class="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1.5 border border-surface-container px-3 py-1.5 rounded-lg">
+              <span class="material-symbols-outlined text-base">download</span> Download
+            </button>
+          </div>
+
+          <div class="p-4 flex items-center justify-between hover:bg-surface-container-low transition-colors">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-red-600 text-3xl">picture_as_pdf</span>
+              <div>
+                <h4 class="font-bold text-sm text-primary">Chamber of Commerce Membership & Electronic Signature Attestation</h4>
+                <p class="text-xs text-gray-500">PDF • 2.1 MB • Riyadh Chamber</p>
+              </div>
+            </div>
+            <button class="text-xs font-bold text-primary hover:text-secondary flex items-center gap-1.5 border border-surface-container px-3 py-1.5 rounded-lg">
+              <span class="material-symbols-outlined text-base">download</span> Download
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 4: Entity Details -->
+      <div id="tab-content-entity" class="p-6 sm:p-8 space-y-6 hidden">
+        <div>
+          <h2 class="text-xl font-bold text-primary">Corporate Entity & Authorized Signatories</h2>
+          <p class="text-sm text-on-surface-variant">Registered institutional information on file with Omar Shalpy Government Licensing.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-surface-container-lowest p-6 rounded-xl border border-surface-container">
+            <h3 class="font-bold text-base text-primary mb-4 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[#fed65b]">domain</span>
+              Entity Legal Profile
+            </h3>
+            <div class="space-y-3 text-xs">
+              <div class="flex justify-between py-1.5 border-b border-surface-container"><span class="text-gray-500">Legal Name:</span> <strong class="text-primary">Global Horizons Holding LLC</strong></div>
+              <div class="flex justify-between py-1.5 border-b border-surface-container"><span class="text-gray-500">National Unified Number (700):</span> <strong class="text-primary font-mono">7018294102</strong></div>
+              <div class="flex justify-between py-1.5 border-b border-surface-container"><span class="text-gray-500">VAT Registration (ZATCA):</span> <strong class="text-primary font-mono">310294819200003</strong></div>
+              <div class="flex justify-between py-1.5 border-b border-surface-container"><span class="text-gray-500">National Address:</span> <strong class="text-primary">King Fahd Rd, Al Olaya, Riyadh 12214</strong></div>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-lowest p-6 rounded-xl border border-surface-container">
+            <h3 class="font-bold text-base text-primary mb-4 flex items-center gap-2">
+              <span class="material-symbols-outlined text-[#fed65b]">badge</span>
+              Authorized Legal Representation
+            </h3>
+            <div class="space-y-3 text-xs">
+              <div class="flex justify-between py-1.5 border-b border-surface-container"><span class="text-gray-500">Assigned Partner:</span> <strong class="text-primary">Omar Shalpy (Senior Government Counsel)</strong></div>
+              <div class="flex justify-between py-1.5 border-b border-surface-container"><span class="text-gray-500">Client Executive:</span> <strong class="text-primary">Sheikh Abdulaziz Al-Falih</strong></div>
+              <div class="flex justify-between py-1.5 border-b border-surface-container"><span class="text-gray-500">Direct Liaison Tel:</span> <strong class="text-primary font-mono">+966 11 482 9900</strong></div>
+              <div class="flex justify-between py-1.5 border-b border-surface-container"><span class="text-gray-500">Najiz Delegation Code:</span> <strong class="text-primary font-mono">POA-NJZ-88192</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full bg-primary text-on-primary pt-16 pb-12">
+  <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-16">
+      <div class="col-span-1 md:col-span-1">
+        <div class="flex items-center gap-2 mb-6">
+          <span class="material-symbols-outlined text-soft-gold">verified</span>
+          <span class="font-headline-md text-headline-md text-surface-white">SHALPY</span>
+        </div>
+        <p class="font-body-md text-label-md text-on-primary-container leading-relaxed">
+          Premium government relations and licensing consultancy for the visionaries of tomorrow.
+        </p>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Resources</h4>
+        <a class="font-body-md text-label-md text-on-primary-container hover:text-on-primary" href="knowledge-center.html">Regulatory Guide</a>
+        <a class="font-body-md text-label-md text-on-primary-container hover:text-on-primary" href="knowledge-center.html">Vision 2030 FAQs</a>
+        <a class="font-body-md text-label-md text-on-primary-container hover:text-on-primary" href="services.html">Investor Licensing</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Legal</h4>
+        <p class="font-body-md text-label-md text-on-primary-container">CR: 10101234567</p>
+        <p class="font-body-md text-label-md text-on-primary-container">VAT: 312345678900003</p>
+        <a class="font-body-md text-label-md text-on-primary-container hover:text-on-primary" href="contact-modal.html">Privacy Policy</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h4 class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Connect</h4>
+        <div class="flex gap-4">
+          <a href="contact-modal.html" class="material-symbols-outlined cursor-pointer hover:text-soft-gold text-on-primary-container">public</a>
+          <a href="contact-modal.html" class="material-symbols-outlined cursor-pointer hover:text-soft-gold text-on-primary-container">work</a>
+          <a href="contact-modal.html" class="material-symbols-outlined cursor-pointer hover:text-soft-gold text-on-primary-container">mail</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-on-primary-fixed-variant text-center">
+      <p class="font-label-sm text-label-sm text-on-primary-container">© 2024 Omar Shalpy Government Licensing. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Interactive Tab Switcher Script -->
+<script>
+  function switchProfileTab(tabName) {
+    // Hide all tab contents
+    const contents = ['licenses', 'applications', 'documents', 'entity'];
+    contents.forEach(name => {
+      const el = document.getElementById('tab-content-' + name);
+      const btn = document.getElementById('tab-btn-' + name);
+      if (el) el.classList.add('hidden');
+      if (btn) {
+        btn.classList.remove('border-primary', 'text-primary', 'font-bold');
+        btn.classList.add('border-transparent', 'text-on-surface-variant', 'font-semibold');
+      }
+    });
+
+    // Show active tab
+    const activeContent = document.getElementById('tab-content-' + tabName);
+    const activeBtn = document.getElementById('tab-btn-' + tabName);
+    if (activeContent) activeContent.classList.remove('hidden');
+    if (activeBtn) {
+      activeBtn.classList.add('border-primary', 'text-primary', 'font-bold');
+      activeBtn.classList.remove('border-transparent', 'text-on-surface-variant', 'font-semibold');
+    }
+  }
+</script>
+
+<script src="../assets/js/i18n.js?v=3.0"></script>
+<script src="../assets/js/app-nav.js?v=3.0"></script>
+</body>
+</html>
