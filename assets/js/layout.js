@@ -23,38 +23,38 @@
     </a>
 
     <!-- Desktop Navigation Links -->
-    <nav class="hidden lg:flex items-center gap-6 text-[13px] tracking-wider uppercase font-label-md">
-      <a href="${rootPrefix}index.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="home">HOME</a>
+    <nav class="hidden lg:flex items-center gap-3 xl:gap-6 text-[13px] tracking-wider uppercase font-label-md whitespace-nowrap">
+      <a href="${rootPrefix}index.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors whitespace-nowrap" data-path="home">HOME</a>
       
       <!-- Services Dropdown -->
-      <div class="relative group/nav">
-        <a href="${pagePrefix}services.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors flex items-center gap-1" data-path="services">
-          SERVICES
-          <span class="material-symbols-outlined text-[16px] group-hover/nav:rotate-180 transition-transform">expand_more</span>
+      <div class="relative group/nav flex-shrink-0">
+        <a href="${pagePrefix}services.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors flex items-center gap-1 whitespace-nowrap" data-path="services">
+          <span>SERVICES</span>
+          <span class="material-symbols-outlined text-[16px] group-hover/nav:rotate-180 transition-transform flex-shrink-0">expand_more</span>
         </a>
-        <div class="absolute left-0 top-full pt-2 hidden group-hover/nav:block z-50">
-          <div class="bg-[#00174a] shadow-2xl rounded-xl py-2 min-w-[240px] border border-white/15 backdrop-blur-xl">
-            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors" data-path="our-services" href="${pagePrefix}services.html">
+        <div class="absolute left-0 rtl:right-0 rtl:left-auto top-full pt-2 hidden group-hover/nav:block z-50">
+          <div class="bg-[#00174a] shadow-2xl rounded-xl py-2 min-w-[240px] border border-white/15 backdrop-blur-xl flex flex-col">
+            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap" data-path="our-services" href="${pagePrefix}services.html">
               <span class="material-symbols-outlined text-sm text-[#fed65b]">workspace_premium</span>
-              Our Services
+              <span>Our Services</span>
             </a>
-            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors" data-path="administrative-services" href="${pagePrefix}administrative-services.html">
+            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap" data-path="administrative-services" href="${pagePrefix}administrative-services.html">
               <span class="material-symbols-outlined text-sm text-[#fed65b]">admin_panel_settings</span>
-              Administrative Services
+              <span>Administrative Services</span>
             </a>
-            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors" data-path="hr-package" href="${pagePrefix}hr-package.html">
+            <a class="flex items-center gap-2.5 px-5 py-3 text-xs uppercase tracking-wider text-white/85 hover:text-white hover:bg-white/10 transition-colors whitespace-nowrap" data-path="hr-package" href="${pagePrefix}hr-package.html">
               <span class="material-symbols-outlined text-sm text-[#fed65b]">badge</span>
-              HR Management Package
+              <span>HR Management Package</span>
             </a>
           </div>
         </div>
       </div>
 
-      <a href="${pagePrefix}knowledge-center.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="knowledge-center">KNOWLEDGE CENTER</a>
-      <a href="${pagePrefix}blog.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="blog">BLOG</a>
-      <a href="${rootPrefix}index.html#customers" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="customers">CUSTOMERS</a>
-      <a href="${pagePrefix}about-us.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="about-us">ABOUT US</a>
-      <a href="${pagePrefix}contact-modal.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors" data-path="contact">CONTACT</a>
+      <a href="${pagePrefix}knowledge-center.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors whitespace-nowrap" data-path="knowledge-center">KNOWLEDGE CENTER</a>
+      <a href="${pagePrefix}blog.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors whitespace-nowrap" data-path="blog">BLOG</a>
+      <a href="${rootPrefix}index.html#customers" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors whitespace-nowrap" data-path="customers">CUSTOMERS</a>
+      <a href="${pagePrefix}about-us.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors whitespace-nowrap" data-path="about-us">ABOUT US</a>
+      <a href="${pagePrefix}contact-modal.html" class="text-white/85 hover:text-[#fed65b] font-semibold transition-colors whitespace-nowrap" data-path="contact">CONTACT</a>
     </nav>
 
     <!-- Right Actions -->
@@ -176,7 +176,7 @@
     const activeNav = document.body.getAttribute('data-active-nav');
     const currentPath = window.location.pathname;
 
-    document.querySelectorAll('nav a[data-path]').forEach(link => {
+    document.querySelectorAll('nav > a[data-path], nav > .relative > a[data-path]').forEach(link => {
       const pathAttr = link.getAttribute('data-path');
       let isActive = false;
 
@@ -192,11 +192,21 @@
       }
 
       if (isActive) {
-        link.className = 'text-[#fed65b] font-bold border-b-2 border-[#fed65b] pb-1';
+        link.classList.add('text-[#fed65b]', 'font-bold', 'border-b-2', 'border-[#fed65b]', 'pb-1');
+        link.classList.remove('text-white/85');
       } else {
-        link.className = 'text-white/85 hover:text-[#fed65b] font-semibold transition-colors';
+        link.classList.remove('text-[#fed65b]', 'font-bold', 'border-b-2', 'border-[#fed65b]', 'pb-1');
+        link.classList.add('text-white/85');
       }
     });
+
+    if (activeNav) {
+      document.querySelectorAll('nav .group\\/nav a[data-path]').forEach(subLink => {
+        if (subLink.getAttribute('data-path') === activeNav) {
+          subLink.classList.add('text-[#fed65b]', 'bg-white/10');
+        }
+      });
+    }
   }
 
   function ensureScript(src) {

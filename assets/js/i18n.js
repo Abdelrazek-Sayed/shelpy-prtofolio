@@ -343,13 +343,25 @@
     document.querySelectorAll('header [data-path]').forEach(el => {
       const p = el.getAttribute('data-path');
       if (navItems[p]) {
-        const icon = el.querySelector('.material-symbols-outlined');
-        if (icon) {
-          const iconClone = icon.cloneNode(true);
-          el.textContent = navItems[p] + ' ';
-          el.appendChild(iconClone);
+        const textSpan = el.querySelector('span:not(.material-symbols-outlined)');
+        if (textSpan) {
+          textSpan.textContent = navItems[p];
         } else {
-          el.textContent = navItems[p];
+          const icon = el.querySelector('.material-symbols-outlined');
+          if (icon) {
+            const isIconFirst = (el.firstElementChild === icon);
+            const iconClone = icon.cloneNode(true);
+            el.textContent = '';
+            if (isIconFirst) {
+              el.appendChild(iconClone);
+              el.appendChild(document.createTextNode(' ' + navItems[p]));
+            } else {
+              el.appendChild(document.createTextNode(navItems[p] + ' '));
+              el.appendChild(iconClone);
+            }
+          } else {
+            el.textContent = navItems[p];
+          }
         }
       }
     });
