@@ -1,0 +1,40 @@
+<div id="client-portal-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4 animate-fade-in">
+  <div class="bg-[#00174a] border border-white/20 rounded-2xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative text-white">
+    <button onclick="closeClientPortalModal()" class="absolute top-4 right-4 text-white/60 hover:text-white transition-colors">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+    
+    <div class="flex items-center gap-3 mb-6">
+      <div class="w-10 h-10 bg-gradient-to-br from-[#fed65b] to-[#d4af37] rounded-lg flex items-center justify-center shadow-md">
+        <span class="material-symbols-outlined text-[#00113a] text-2xl font-bold">vpn_key</span>
+      </div>
+      <div>
+        <h3 class="font-headline-md text-lg font-bold text-white leading-tight">Client Portal</h3>
+        <p class="text-xs text-[#fed65b] uppercase tracking-wider font-semibold">Government Relations & Licensing</p>
+      </div>
+    </div>
+    
+    <p class="text-xs text-white/70 mb-5 leading-relaxed">
+      Enter your Saudi Commercial Registration (CR) or MISA Investor License ID to access live case files and track ministry submissions.
+    </p>
+    
+    <form onsubmit="handlePortalLogin(event)" class="space-y-4">
+      <div>
+        <label class="block text-[11px] font-semibold text-white/80 uppercase tracking-wider mb-1.5">CR or Investor License ID</label>
+        <input type="text" required placeholder="e.g. 1010123456" class="w-full bg-[#00113a] border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#fed65b] transition-colors" />
+      </div>
+      <div>
+        <label class="block text-[11px] font-semibold text-white/80 uppercase tracking-wider mb-1.5">Authorized Access PIN</label>
+        <input type="password" required placeholder="••••••••" class="w-full bg-[#00113a] border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#fed65b] transition-colors" />
+      </div>
+      <button type="submit" class="w-full mt-2 bg-gradient-to-r from-[#fed65b] to-[#E5C76B] hover:from-[#ffe088] hover:to-[#fed65b] text-[#00113a] font-bold text-xs uppercase tracking-wider py-3 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-sm">login</span>
+        Access Licensing Portal
+      </button>
+    </form>
+    
+    <div id="portal-msg" class="hidden mt-4 p-3 bg-emerald-950/80 border border-emerald-500/50 rounded-lg text-emerald-300 text-xs text-center font-medium">
+      Authenticated successfully. Redirecting to active cases...
+    </div>
+  </div>
+</div>
